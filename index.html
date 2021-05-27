@@ -73,15 +73,14 @@
   <section id="hero">
     <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
 
-      <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
-
       <div class="carousel-inner" role="listbox">
         <!-- Slide 1 -->
         <div class="carousel-item active" style="background-image: url(assets/img/Radio/RadioManantialImage2.jpg)">
           <div class="carousel-container">
             <div class="container">
               <h2 class="animated fadeInDown">Bienvenido a <span>Radio manantial</span></h2>
-              <a href="#" id="btnPlay" class="btn-get-started animated fadeInUp scrollto"><i class="bx bx-play" style="font-size: x-large;"></i></a>
+              <a href="#" id="btnPlay" class="btn-get-started animated fadeInUp scrollto" ><i id="iconpley" class="bx bx-play" style="font-size: x-large;"></i></a>
+              <audio src="http://149.56.195.94:8019/;" id="myVideo" style="display: none;" controls="controls" autoplay="autoplay"></audio>
             </div>
           </div>
         </div>
@@ -591,10 +590,20 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script>
+      var IsPleying = false
+      var vid = document.getElementById("myVideo");
       $(document).ready(function(){
         $("#btnPlay").click(function(){
-          
-        });
+          if(IsPleying == false){
+            $("#iconpley").removeClass("bx bx-play").addClass("bx bx-pause");
+            vid.play();
+            IsPleying = true;
+          } else{
+            $("#iconpley").removeClass("bx bx-pause").addClass("bx bx-play");
+            vid.pause();
+            IsPleying = false;
+          }
+        }); 
       });
   </script>
 </body>

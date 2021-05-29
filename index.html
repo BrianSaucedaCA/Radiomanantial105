@@ -44,6 +44,13 @@
           <li><a class="nav-link scrollto" href="#about">Sobre nosotros</a></li>
           <li><a class="nav-link  scrollto" href="#portfolio">invitados</a></li>
           <li><a class="nav-link scrollto" href="#team">Equipo</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contáctanos</a></li>
+          <li>
+            <a id="btnPlay" class="nav-link scrollto" style="cursor: pointer;" ><i id="iconpley" class="bx bx-play" style="font-size: x-large;"></i> Radio online</a>
+            <audio id="myVideo" style="display: none;" controls="controls" autoplay="autoplay">
+              <source src="http://149.56.195.94:8019/;" type="audio/mpeg">
+            </audio>
+          </li>
           <!--<li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="#">Drop Down 1</a></li>
@@ -61,7 +68,7 @@
               <li><a href="#">Drop Down 4</a></li>
             </ul>
           </li>-->
-          <li><a class="nav-link scrollto" href="#contact">Contáctanos</a></li>
+          
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -73,16 +80,18 @@
   <section id="hero">
     <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
 
+      <ol class="carousel-indicators" style="display: none;" id="hero-carousel-indicators"></ol>
+
       <div class="carousel-inner" role="listbox">
         <!-- Slide 1 -->
         <div class="carousel-item active" style="background-image: url(assets/img/Radio/RadioManantialImage2.jpg)">
           <div class="carousel-container">
             <div class="container">
               <h2 class="animated fadeInDown">Bienvenido a <span>Radio manantial</span></h2>
-              <a href="#" id="btnPlay" class="btn-get-started animated fadeInUp scrollto" ><i id="iconpley" class="bx bx-play" style="font-size: x-large;"></i></a>
+              <!--<a href="#" id="btnPlay" class="btn-get-started animated fadeInUp scrollto" ><i id="iconpley" class="bx bx-play" style="font-size: x-large;"></i></a>
               <audio id="myVideo" style="display: none;" controls="controls" autoplay="autoplay">
-                <source src="http://149.56.195.94:8019/;" type="audio/mp3">
-              </audio>
+                <source src="http://149.56.195.94:8019/;" type="audio/mpeg">
+              </audio>-->
             </div>
           </div>
         </div>
@@ -129,413 +138,6 @@
 
       </div>
     </section><!-- End About Section -->
-
-    <!-- ======= Cta Section ======= -->
-    <section id="cta" class="cta">
-      <div class="container">
-
-        <div class="text-center">
-          <h3>Contamos con</h3>
-          <p>info.</p>
-          <!-- =======<a class="cta-btn" href="#">Call To Action</a> ======= -->
-        </div>
-
-      </div>
-    </section><!-- End Cta Section -->
-
-    <!-- ======= Portfolio Section<a class="cta-btn" href="#">Call To Action</a> ======= -->
-    <section id="portfolio" class="portfolio">
-      <div class="container-fluid">
-
-        <div class="section-title">
-          <h2>Album de invitados</h2>
-          <h3>Echale un vistaso a nuestros <span>Invitados</span></h3>
-          <p>info.</p>
-        </div>
-
-        <div class="row portfolio-container justify-content-center">
-
-          <div class="col-xl-10">
-            <div class="row">
-
-              <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-app">
-                <div class="portfolio-wrap">
-                  <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
-                  <div class="portfolio-info">
-                    <h4>Nombre</h4>
-                    <p>Tema o descripcion del invitado</p>
-                  
-                  </div>
-                </div>
-              </div><!-- End portfolio item -->
-
-              <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-web">
-                <div class="portfolio-wrap">
-                  <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
-                  <div class="portfolio-info">
-                    <h4>Nombre</h4>
-                    <p>Tema o descripcion del invitado</p>
-                    
-                  </div>
-                </div>
-              </div><!-- End portfolio item -->
-
-              <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-app">
-                <div class="portfolio-wrap">
-                  <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
-                  <div class="portfolio-info">
-                    <h4>Nombre</h4>
-                    <p>Tema o descripcion del invitado</p>
-                    
-                  </div>
-                </div>
-              </div><!-- End portfolio item -->
-
-              <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-card">
-                <div class="portfolio-wrap">
-                  <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
-                  <div class="portfolio-info">
-                    <h4>Nombre</h4>
-                    <p>Tema o descripcion del invitado</p>
-                    
-                  </div>
-                </div>
-              </div><!-- End portfolio item -->
-
-              <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-web">
-                <div class="portfolio-wrap">
-                  <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
-                  <div class="portfolio-info">
-                    <h4>Nombre</h4>
-                    <p>Tema o descripcion del invitado</p>
-                    
-                  </div>
-                </div>
-              </div><!-- End portfolio item -->
-
-              <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-app">
-                <div class="portfolio-wrap">
-                  <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
-                  <div class="portfolio-info">
-                    <h4>Nombre</h4>
-                    <p>Tema o descripcion del invitado</p>
-                    
-                  </div>
-                </div>
-              </div><!-- End portfolio item -->
-
-              <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-card">
-                <div class="portfolio-wrap">
-                  <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
-                  <div class="portfolio-info">
-                    <h4>Nombre</h4>
-                    <p>Tema o descripcion del invitado</p>
-                    
-                  </div>
-                </div>
-              </div><!-- End portfolio item -->
-
-              <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-card">
-                <div class="portfolio-wrap">
-                  <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
-                  <div class="portfolio-info">
-                    <h4>Nombre</h4>
-                    <p>Tema o descripcion del invitado</p>
-                    
-                  </div>
-                </div>
-              </div><!-- End portfolio item -->
-
-              <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-web">
-                <div class="portfolio-wrap">
-                  <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
-                  <div class="portfolio-info">
-                    <h4>Nombre</h4>
-                    <p>Tema o descripcion del invitado</p>
-                    
-                  </div>
-                </div>
-              </div><!-- End portfolio item -->
-
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Portfolio Section -->
-
-    <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials section-bg">
-      <div class="container-fluid">
-
-        <div class="section-title">
-          <h2>Comentarios</h2>
-          <h3>Que opinan las <span>presonas</span> de nosotros</h3>
-          <p>info.</p>
-        </div>
-
-        <div class="row justify-content-center">
-          <div class="col-xl-10">
-
-            <div class="row">
-
-              <div class="col-lg-6">
-                <div class="testimonial-item">
-                  <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                  <h3>Saul Goodman</h3>
-                  <h4>Ceo &amp; Founder</h4>
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                </div>
-              </div><!-- End testimonial-item -->
-
-              <div class="col-lg-6">
-                <div class="testimonial-item mt-4 mt-lg-0">
-                  <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                  <h3>Sara Wilsson</h3>
-                  <h4>Designer</h4>
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                </div>
-              </div><!-- End testimonial-item -->
-
-              <div class="col-lg-6">
-                <div class="testimonial-item mt-4">
-                  <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                  <h3>Jena Karlis</h3>
-                  <h4>Store Owner</h4>
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                </div>
-              </div><!-- End testimonial-item -->
-
-              <div class="col-lg-6">
-                <div class="testimonial-item mt-4">
-                  <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                  <h3>Matt Brandon</h3>
-                  <h4>Freelancer</h4>
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                </div>
-              </div><!-- End testimonial-item -->
-
-              <div class="col-lg-6">
-                <div class="testimonial-item mt-4">
-                  <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                  <h3>John Larson</h3>
-                  <h4>Entrepreneur</h4>
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                </div>
-              </div><!-- End testimonial-item -->
-
-              <div class="col-lg-6">
-                <div class="testimonial-item mt-4">
-                  <img src="assets/img/testimonials/testimonials-6.jpg" class="testimonial-img" alt="">
-                  <h3>Emily Harison</h3>
-                  <h4>Store Owner</h4>
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Eius ipsam praesentium dolor quaerat inventore rerum odio. Quos laudantium adipisci eius. Accusamus qui iste cupiditate sed temporibus est aspernatur. Sequi officiis ea et quia quidem.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                </div>
-              </div><!-- End testimonial-item -->
-
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End Testimonials Section -->
-
-    <!-- ======= Team Section ======= -->
-    <section id="team" class="team">
-      <div class="container-fluid">
-
-        <div class="section-title">
-          <h2>Equipo</h2>
-          <h3>Nuestro <span>equipo</span></h3>
-          <p>info.</p>
-        </div>
-
-        <div class="row justify-content-center">
-          <div class="col-xl-10">
-            <div class="row">
-
-              <div class="col-xl-3 col-lg-4 col-md-6">
-                <div class="member">
-                  <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
-                  <div class="member-info">
-                    <div class="member-info-content">
-                      <h4>Nombre</h4>
-                      <span>Puesto</span>
-                    </div>
-                    <div class="social">
-                      <a href=""><i class="bi bi-twitter"></i></a>
-                      <a href=""><i class="bi bi-facebook"></i></a>
-                      <a href=""><i class="bi bi-instagram"></i></a>
-                      <a href=""><i class="bi bi-linkedin"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div> <!-- End Member Item -->
-
-              <div class="col-xl-3 col-lg-4 col-md-6" data-wow-delay="0.1s">
-                <div class="member">
-                  <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
-                  <div class="member-info">
-                    <div class="member-info-content">
-                      <h4>Nombre</h4>
-                      <span>Puesto</span>
-                    </div>
-                    <div class="social">
-                      <a href=""><i class="bi bi-twitter"></i></a>
-                      <a href=""><i class="bi bi-facebook"></i></a>
-                      <a href=""><i class="bi bi-instagram"></i></a>
-                      <a href=""><i class="bi bi-linkedin"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div> <!-- End Member Item -->
-
-              <div class="col-xl-3 col-lg-4 col-md-6" data-wow-delay="0.2s">
-                <div class="member">
-                  <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
-                  <div class="member-info">
-                    <div class="member-info-content">
-                      <h4>Nombre</h4>
-                      <span>Puesto</span>
-                    </div>
-                    <div class="social">
-                      <a href=""><i class="bi bi-twitter"></i></a>
-                      <a href=""><i class="bi bi-facebook"></i></a>
-                      <a href=""><i class="bi bi-instagram"></i></a>
-                      <a href=""><i class="bi bi-linkedin"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div> <!-- End Member Item -->
-
-              <div class="col-xl-3 col-lg-4 col-md-6" data-wow-delay="0.3s">
-                <div class="member">
-                  <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
-                  <div class="member-info">
-                    <div class="member-info-content">
-                      <h4>Nombre</h4>
-                      <span>Puesto</span>
-                    </div>
-                    <div class="social">
-                      <a href=""><i class="bi bi-twitter"></i></a>
-                      <a href=""><i class="bi bi-facebook"></i></a>
-                      <a href=""><i class="bi bi-instagram"></i></a>
-                      <a href=""><i class="bi bi-linkedin"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div> <!-- End Member Item -->
-
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End Team Section -->
-
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact section-bg">
-      <div class="container-fluid">
-
-        <div class="section-title">
-          <h2>Contáctanos</h2>
-          <h3>Ven con nosotros con un <span>Click</span></h3>
-          <p>info.</p>
-        </div>
-
-        <div class="row justify-content-center">
-          <div class="col-xl-10">
-            <div class="row">
-
-              <div class="col-lg-6">
-
-                <div class="row justify-content-center">
-
-                  <div class="col-md-6 info d-flex flex-column align-items-stretch">
-                    <i class="bx bx-map"></i>
-                    <h4>Ubicacion</h4>
-                    <p>Dirección</p>
-                  </div>
-                  <div class="col-md-6 info d-flex flex-column align-items-stretch">
-                    <i class="bx bx-phone"></i>
-                    <h4>Telefono</h4>
-                    <p>+1 5589 55488 55<br>+1 5589 22548 64</p>
-                  </div>
-                  <div class="col-md-6 info d-flex flex-column align-items-stretch">
-                    <i class="bx bx-envelope"></i>
-                    <h4>Correo</h4>
-                    <p>contact@example.com<br>info@example.com</p>
-                  </div>
-                  <div class="col-md-6 info d-flex flex-column align-items-stretch">
-                    <i class="bx bx-time-five"></i>
-                    <h4>Horarios</h4>
-                    <p>Mon - Fri: 9AM to 5PM<br>Sunday: 9AM to 1PM</p>
-                  </div>
-
-                </div>
-
-              </div>
-
-              <div class="col-lg-6">
-                <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                  <div class="row">
-                    <div class="col-md-6 form-group">
-                      <label for="name">Nombre</label>
-                      <input type="text" name="name" class="form-control" id="name" required>
-                    </div>
-                    <div class="col-md-6 form-group mt-3 mt-md-0">
-                      <label for="email">Correo</label>
-                      <input type="email" class="form-control" name="email" id="email" required>
-                    </div>
-                  </div>
-                  <div class="form-group mt-3">
-                    <label for="subject">Asunto</label>
-                    <input type="text" class="form-control" name="subject" id="subject" required>
-                  </div>
-                  <div class="form-group mt-3">
-                    <label for="message">Comentario</label>
-                    <textarea class="form-control" name="message" rows="8" required></textarea>
-                  </div>
-                  <div class="my-3">
-                    <div class="loading">Loading</div>
-                    <div class="error-message"></div>
-                    <div class="sent-message">Tu mensaje a sido enviado. Gracias!</div>
-                  </div>
-                  <div class="text-center"><button type="submit">Enviar</button></div>
-                </form>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End Contact Section -->
 
   </main><!-- End #main -->
 
@@ -595,6 +197,10 @@
       var IsPleying = false
       var vid = document.getElementById("myVideo");
       $(document).ready(function(){
+        $("#iconpley").removeClass("bx bx-play").addClass("bx bx-pause");
+        vid.play();
+        IsPleying = true;
+
         $("#btnPlay").click(function(){
           if(IsPleying == false){
             $("#iconpley").removeClass("bx bx-play").addClass("bx bx-pause");
